@@ -27,6 +27,7 @@ module.exports = {
         avoidEscape: true,
       },
     ],
+    'react/react-in-jsx-scope': 'off', // ! react import 안해도 에러 안뜨게 함
     // ? nestjs 기본 eslint
     '@typescript-eslint/interface-name-prefix': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
@@ -40,7 +41,7 @@ module.exports = {
         caughtErrorsIgnorePattern: '^_',
       },
     ],
-    '@typescript-eslint/no-explicit-any': 'error', // ! any 타입을 사용하면 에러를 발생시킵니다.
+    '@typescript-eslint/no-explicit-any': 'off', // ! any 타입을 사용하면 에러를 발생시킵니다.
     'no-unused-vars': 'off',
     // ! 추가
     camelcase: 'warn', // ! 카멜케이스를 사용하지 않으면 경고를 발생시킵니다.
